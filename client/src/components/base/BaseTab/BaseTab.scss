@@ -1,0 +1,39 @@
+@import "../../../scss/app";
+
+$tab-background: #2B3034;
+$tab-link-color: #A4AFB0;
+
+.base-tab-component {
+  .link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid $border-color-main-dark;
+
+    background-color: $tab-background;
+    color: $tab-link-color;
+
+    &.active {
+      background-color: #1D2226;
+    }
+
+    &:not(.active) {
+      &.is-primary {
+        &:hover {
+          color: $text-color-theme-primary;
+        }
+      }
+
+      &.is-warning {
+        &:hover {
+          color: $text-color-theme-warning;
+        }
+      }
+
+      &.is-success {
+        &:hover {
+          color: $text-color-theme-success;
+        }
+      }
+    }
+  }
+}

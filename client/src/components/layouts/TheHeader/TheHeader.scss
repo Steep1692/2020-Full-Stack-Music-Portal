@@ -1,0 +1,25 @@
+@import "../../../scss/app";
+
+.the-header-component {
+  z-index: $z-index-the-header;
+
+  padding: $gutter-main 0;
+  border-bottom: $border-size-main solid $border-color-main-dark;
+
+  background-color: $background-color-sky;
+  color: $text-color-main;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      a {
+        color: $link-color-main;
+
+        font-weight: bold;
+      }
+    }
+  }
+}

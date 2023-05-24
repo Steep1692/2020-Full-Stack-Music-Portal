@@ -1,0 +1,23 @@
+@import "../../../scss/app";
+
+$novelty-padding-top-bottom:     16px;
+$novelty-padding-left-right:     6px;
+
+$novelty-border-color:           #394247;
+
+$novelty-background-color:       #3f484d;
+
+
+.base-novelty-component {
+  padding: $novelty-padding-top-bottom $novelty-padding-left-right;
+  border: 1px solid $novelty-border-color;
+
+  background-color: $novelty-background-color;
+
+  & > .inner {
+    padding: $padding-main;
+    border: 1px solid $novelty-border-color;
+
+    background-color: $background-color-main;
+  }
+}

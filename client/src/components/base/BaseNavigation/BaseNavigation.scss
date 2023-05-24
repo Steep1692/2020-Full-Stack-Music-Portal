@@ -1,0 +1,13 @@
+@import "../../../scss/app";
+
+.base-navigation-component {
+  ul {
+    li {
+      display: inline-block;
+      .tab-item {
+        &:first-of-type { border-top-left-radius: $border-size-main }
+        &:last-of-type { border-top-right-radius: $border-size-main }
+      }
+    }
+  }
+}

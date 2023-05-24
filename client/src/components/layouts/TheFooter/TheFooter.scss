@@ -1,0 +1,29 @@
+@import "../../../scss/app";
+
+.the-footer-component {
+  .wrapper {
+    padding: $gutter-main 0;
+
+    background-color: $background-color-main;
+    color: $text-color-main;
+
+    .social {
+      ul {
+        li {
+          display: inline-block;
+
+          &:after {
+            content: '|';
+            margin: 0 8px;
+          }
+
+          a { color: $link-color-main }
+        }
+
+        li:not(:first-of-type):after {
+          display: none;
+        }
+      }
+    }
+  }
+}
